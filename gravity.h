@@ -5,18 +5,20 @@
 #include <vector>
 #include <string>
 #include "raylib.h"
+#include <time.h>
 
-#define ACCELERATION 9.81
+#define G 500.0f
 
 class Ball {
+public:
     // characteristics
-    int mass;
-    int velocity;
-    int radius;
+    float mass = 1.0f;
+    float velocity = 0.0f;
+    float radius = 30.0f;
 
     // position
-    double x;
-    double y;
+    float x = 0.0f;
+    float y = 0.0f;
 
 };
 
