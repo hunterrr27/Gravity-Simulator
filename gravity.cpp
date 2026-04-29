@@ -3,9 +3,10 @@
 class Ball {
 public:
     // characteristics
-    float mass = 1.0f;
-    float velocity = 0.0f;
+    float mass = 50000.0f;
+    Vector2 velocity = { 0.0f, 0.0f };
     float radius = 30.0f;
+    Vector2 acceleration = { 0, G };
 
     // position
     float x = 0.0f;
@@ -20,12 +21,14 @@ public:
         DrawCircleV({this->x, this->y}, this->radius, BLACK);
     }
     void Update(float deltaTime) {
-        this->velocity += G * deltaTime;
-        this->y += this->velocity * deltaTime;
+        this->velocity.x += acceleration.x * deltaTime;
+        this->velocity.y += acceleration.y * deltaTime;
+        this->x += this->velocity.x * deltaTime;
+        this->y += this->velocity.y * deltaTime;
     }
     void Bounce(float floorY) {
         y = floorY - radius;
-        velocity *= -0.9f;
+        velocity.y *= -0.9f;
     }
     float GetY() { return this->y; }
     float GetRadius() { return this->radius; }
@@ -41,10 +44,31 @@ public:
         balls.push_back(Ball(x, y));
     }
     void Update(float deltaTime, float screenHeight) {
+        for (Ball &b : balls) {
+            b.acceleration = { 0, G };
+        }
         // gravity update loop
+        for (size_t i = 0; i < balls.size(); i++) {
+            for (size_t j = i + 1; j < balls.size(); j++) {
+                // logic for ball i pulling on ball j AND ball j pulling on ball i
+                float dx = balls[j].x - balls[i].x;
+                float dy = balls[j].y - balls[i].y;
+                float d = sqrt(pow(dx, 2) + pow(dy, 2));
+                // set min limit for d so we never divide by 0
+                d = fmaxf(d, 30.0f);
+
+                Vector2 direction = { dx / d, dy / d };
+                float force = (G * balls[i].mass * balls[j].mass) / pow(d, 2);
+                balls[i].acceleration.x += direction.x * force / balls[i].mass;
+                balls[i].acceleration.y += direction.y * force / balls[i].mass;
+                balls[j].acceleration.x += -direction.x * force / balls[j].mass;
+                balls[j].acceleration.y += -direction.y * force / balls[j].mass;
+            }
+        }
+
+        // individual movement and boundaries
         for (Ball &b : balls) {
             b.Update(deltaTime);
-
             if (b.GetY() + b.GetRadius() >= screenHeight) {
                 b.Bounce(screenHeight);
             }
