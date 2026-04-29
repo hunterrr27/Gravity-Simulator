@@ -9,17 +9,30 @@
 
 #define G 500.0f
 
+/*
 class Ball {
 public:
     // characteristics
-    float mass = 1.0f;
-    float velocity = 0.0f;
-    float radius = 30.0f;
+    float mass;
+    float velocity;
+    float radius;
 
     // position
-    float x = 0.0f;
-    float y = 0.0f;
+    float x;
+    float y;
+
+    // constructor
+    Ball(float startX, float startY) : x(startX), y(startY) {}
+
+    // methods
+    // draw method
+    void Draw();
+    void Update(float deltaTime);
+    void Bounce(float floorY);
+    float GetY();
+    float GetRadius();
 
 };
+*/
 
 #endif // !GRAVITY_H
