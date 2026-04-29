@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/hunter/Developer/gravity/build/_deps/raylib-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
