@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gravity.dir/gravity.cpp.o"
   "CMakeFiles/gravity.dir/gravity.cpp.o.d"
+  "CMakeFiles/gravity.dir/main.cpp.o"
+  "CMakeFiles/gravity.dir/main.cpp.o.d"
   "gravity"
   "gravity.pdb"
 )

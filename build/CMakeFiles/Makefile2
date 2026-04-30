@@ -169,12 +169,12 @@ CMakeFiles/gravity.dir/all: _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all
 CMakeFiles/gravity.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity.dir/build.make CMakeFiles/gravity.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity.dir/build.make CMakeFiles/gravity.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=22,23 "Built target gravity"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=22,23,24 "Built target gravity"
 .PHONY : CMakeFiles/gravity.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gravity.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hunter/Developer/gravity/build/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hunter/Developer/gravity/build/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gravity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hunter/Developer/gravity/build/CMakeFiles 0
 .PHONY : CMakeFiles/gravity.dir/rule
@@ -186,7 +186,7 @@ gravity: CMakeFiles/gravity.dir/rule
 # codegen rule for target.
 CMakeFiles/gravity.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity.dir/build.make CMakeFiles/gravity.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=22,23 "Finished codegen for target gravity"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=22,23,24 "Finished codegen for target gravity"
 .PHONY : CMakeFiles/gravity.dir/codegen
 
 # clean rule for target.
@@ -201,7 +201,7 @@ CMakeFiles/gravity.dir/clean:
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=24,25,26,27,28,29,30 "Built target raylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=25,26,27,28,29,30,31 "Built target raylib"
 .PHONY : _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -218,7 +218,7 @@ raylib: _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 # codegen rule for target.
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=24,25,26,27,28,29,30 "Finished codegen for target raylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=25,26,27,28,29,30,31 "Finished codegen for target raylib"
 .PHONY : _deps/raylib-build/raylib/CMakeFiles/raylib.dir/codegen
 
 # clean rule for target.
@@ -265,7 +265,7 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/clean:
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=31 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=32 "Built target update_mappings"
 .PHONY : _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -282,7 +282,7 @@ update_mappings: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_m
 # codegen rule for target.
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=31 "Finished codegen for target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hunter/Developer/gravity/build/CMakeFiles --progress-num=32 "Finished codegen for target update_mappings"
 .PHONY : _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/codegen
 
 # clean rule for target.
